@@ -1,0 +1,450 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.container-fluid {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  padding: 0%;
+  overflow: hidden;
+  font-family: "Press Start 2P", cursive;
+  font-family: "Roboto Mono", monospace;
+}
+
+.body {
+  display: none;
+  margin: 0%;
+  border: solid black 1px;
+  padding: 0%;
+}
+
+.navbar,
+.g-body-tertiary,
+.navbar-expand-lg {
+  --bs-navbar-brand-margin-end: 0% !important;
+}
+
+.nabvar {
+  position: fixed;
+  padding: 10px 0px 10px 0px;
+  place-content: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 300px;
+  width: 100%;
+}
+
+.navbar-toggler {
+  margin-left: 10px;
+}
+
+#SobreMi {
+  scroll-margin-top: 12ex;
+}
+
+#Proyectos {
+  scroll-margin-top: 5ex;
+}
+
+#Skills {
+  scroll-margin-top: 6ex;
+}
+
+#Contactame {
+  scroll-margin-top: 8ex;
+}
+
+#html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 991px) {
+  .bg-body-tertiary {
+    background-color: rgb(235, 235, 235) !important;
+  }
+}
+
+.bg-body-tertiary {
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  padding: 0%;
+  position: absolute;
+  position: fixed;
+  background-color: black !important;
+}
+
+.nav-link {
+  border: solid black 1px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 2px;
+}
+
+.nav-link:hover {
+  box-shadow: 0 0 40px 40px black inset;
+  color: white !important;
+  transition: 0.3s;
+}
+
+ul {
+  margin-bottom: 0%;
+}
+
+.presentacion {
+  border: solid 1px black;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+  gap: 10%;
+  padding: 20px 0px 0px 0px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-height: 300px;
+    min-height: 300px;
+    color: white;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.presentacion ul li {
+  justify-content: space-between;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  padding: 0px 0px 0px 50px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .presentacion ul li {
+    display: none;
+  }
+}
+
+.titulo h1 {
+  margin-left: 50px;
+  font-size: 60px;
+  padding-left: 20px;
+}
+
+.cacao {
+  float: right;
+  width: 580px;
+}
+
+@media screen and (max-width: 768px) {
+  .cacao {
+    display: none;
+  }
+}
+
+.cajon_sobre_mi {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  margin-top: 42px;
+  margin-bottom: 42px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .cajon_sobre_mi {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.cajon_sobre_mi ul {
+  list-style: none;
+}
+
+.titulo p {
+  font-size: 30px;
+  margin-left: 70px;
+  font-family: "Playfair Display";
+}
+
+.foto_carnet {
+  width: 300px;
+}
+
+.sobre_mi {
+  border: solid 1px black;
+  display: table-row;
+  padding: 0px 10px;
+}
+
+.sobre_mi ul li h2 {
+  margin-top: 40px;
+  margin-left: 50px;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .sobre_mi ul li h2 {
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+.sobre_mi_texto {
+  font-size: large;
+}
+
+.selfie ul li img {
+  justify-content: space-between;
+  text-decoration: none;
+  gap: 10px;
+  border: solid 3px black;
+  padding: 3px;
+  max-width: 500px;
+  max-height: 600px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .selfie ul li img {
+    max-width: 500px;
+    min-width: 100px;
+    padding: 0px;
+  }
+}
+
+.Proyectos {
+  text-align: center;
+  /* border: solid 1px black; */
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .Proyectos {
+    margin-bottom: 30px;
+  }
+}
+
+.Proyectos ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 185px);
+  gap: 26px;
+  text-decoration: none;
+  list-style: none;
+  place-content: center;
+}
+
+.Proyectos {
+  text-align: center;
+  /* border: solid 1px black; */
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  background-size: cover;
+}
+
+.Proyectos h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.Proyectos ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 185px);
+  gap: 26px;
+  place-content: center;
+  text-decoration: none;
+  list-style: none;
+  /* border: solid 1px black; */
+}
+
+@media screen and (max-width: 768px) {
+  .Proyectos ul {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+}
+
+.Proyectos ul li {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Proyectos ul li img {
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+  /* border: solid 1px black; */
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  background-size: cover;
+}
+
+.skills h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 185px);
+  gap: 26px;
+  place-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .skills ul {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+}
+
+.skills ul li {
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills ul li img {
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-ul li:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .menu::after {
+    display: none;
+  }
+}
+
+.container-contact {
+  padding: 50px;
+  display: flex;
+  height: 50px;
+  /* border: 1px solid black; */
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.footer {
+  border-top: solid 1px black;
+  font-size: 8px;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.contacto-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.container-form-sin-send {
+  /**  margin: 20px;
+  padding: 20px;
+  border: 1px solid black; */
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container-mb-3 {
+  /* border: 1px solid black; */
+  margin: 10px;
+  margin-bottom: 0%;
+  padding: 10px;
+  padding-bottom: 0%;
+  align-items: center;
+  width: 500px;
+}
+
+.bi {
+  display: flex;
+  grid-row: inherit;
+  max-width: 50px;
+  height: 50px;
+}
+
+.boton-de-enviar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 5px;
+  width: 500px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  border: solid 1px black;
+}
+
+.boton-de-enviar:hover {
+  box-shadow: 0 0 40px 40px black inset;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.bi-gmail img {
+  max-width: 60px;
+  height: 50px;
+}
