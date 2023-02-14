@@ -24,6 +24,7 @@
 .g-body-tertiary,
 .navbar-expand-lg {
   --bs-navbar-brand-margin-end: 0% !important;
+  font-size: 14px;
 }
 
 .nabvar {
@@ -99,9 +100,9 @@ ul {
   border: solid 1px black;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   width: 100%;
-  gap: 10%;
+  /* gap: 10%; */
   padding: 20px 0px 0px 0px;
   display: inline-flex;
   justify-content: space-between;
@@ -127,7 +128,7 @@ ul {
   text-decoration: none;
   display: flex;
   list-style: none;
-  padding: 0px 0px 0px 50px;
+  /* padding: 0px 0px 0px 50px; */
   gap: 10px;
 }
 
@@ -138,14 +139,14 @@ ul {
 }
 
 .titulo h1 {
-  margin-left: 50px;
-  font-size: 60px;
-  padding-left: 20px;
+  /* margin-left: 50px; */
+  font-size: 30px;
+  padding-left: 150px;
 }
 
 .cacao {
   float: right;
-  width: 580px;
+  width: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,7 +160,7 @@ ul {
   align-items: center;
   gap: 150px;
   margin-top: 42px;
-  margin-bottom: 42px;
+  margin-bottom: 200px;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -180,8 +181,8 @@ ul {
 }
 
 .titulo p {
-  font-size: 30px;
-  margin-left: 70px;
+  font-size: 15px;
+  margin-left: 200px;
   font-family: "Playfair Display";
 }
 
@@ -198,7 +199,7 @@ ul {
 .sobre_mi ul li h2 {
   margin-top: 40px;
   margin-left: 50px;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -209,7 +210,7 @@ ul {
 }
 
 .sobre_mi_texto {
-  font-size: large;
+  font-size: small;
 }
 
 .selfie ul li img {
@@ -230,14 +231,10 @@ ul {
     min-width: 100px;
     padding: 0px;
   }
-}
 
-.Proyectos {
-  text-align: center;
-  /* border: solid 1px black; */
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 2%;
+  .selfie {
+    padding: 0%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -246,37 +243,28 @@ ul {
   }
 }
 
-.Proyectos ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 185px);
-  gap: 26px;
-  text-decoration: none;
-  list-style: none;
-  place-content: center;
-}
-
 .Proyectos {
   text-align: center;
   /* border: solid 1px black; */
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 300px;
   padding: 2%;
   background-size: cover;
 }
 
 .Proyectos h2 {
-  font-size: 30px;
+  font-size: 15px;
   margin-bottom: 25px;
 }
 
 .Proyectos ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 185px);
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   gap: 26px;
-  place-content: center;
   text-decoration: none;
   list-style: none;
-  /* border: solid 1px black; */
+  place-content: center;
+  padding: 0%;
 }
 
 @media screen and (max-width: 768px) {
@@ -306,13 +294,13 @@ ul {
   text-align: center;
   /* border: solid 1px black; */
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 300px;
   padding: 2%;
   background-size: cover;
 }
 
 .skills h2 {
-  font-size: 30px;
+  font-size: 15px;
   margin-bottom: 25px;
 }
 
@@ -323,6 +311,7 @@ ul {
   place-content: center;
   text-decoration: none;
   list-style: none;
+  padding: 0%;
 }
 
 @media screen and (max-width: 768px) {
@@ -372,7 +361,7 @@ ul {
 
 .footer {
   border-top: solid 1px black;
-  font-size: 8px;
+  font-size: 4px;
   text-align: center;
 }
 
@@ -386,6 +375,7 @@ ul {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  margin-bottom: 200px;
   align-items: center;
   /* border: 1px solid black; */
 }
@@ -408,6 +398,32 @@ ul {
   margin-bottom: 10px;
 }
 
+.bi {
+  display: flex;
+  grid-row: inherit;
+  max-width: 25px;
+  height: 25px;
+}
+
+.bi-gmail img {
+  max-width: 30px;
+  height: 25px;
+}
+
+/* ---------------------------------------------- */
+
+.form-check-label {
+  color: white;
+}
+
+.imagen ul {
+  padding: 0%;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  gap: 680px;
+}
+
 .container-mb-3 {
   /* border: 1px solid black; */
   margin: 10px;
@@ -418,11 +434,11 @@ ul {
   width: 500px;
 }
 
-.bi {
-  display: flex;
-  grid-row: inherit;
-  max-width: 50px;
-  height: 50px;
+@media screen and (max-width: 991px) {
+  .container-mb-3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .boton-de-enviar {
@@ -444,7 +460,13 @@ ul {
   transition: 0.3s;
 }
 
-.bi-gmail img {
-  max-width: 60px;
-  height: 50px;
+@media screen and (max-width: 991px) {
+  .boton-de-enviar {
+    width: 350px;
+  }
+}
+
+.padding-decripcion {
+  padding-left: 5px;
+  padding-right: 5px;
 }
