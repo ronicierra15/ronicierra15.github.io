@@ -144,6 +144,12 @@ ul {
   padding-left: 150px;
 }
 
+@media screen and (max-width: 768px) {
+  .titulo h1 {
+    padding-left: 0%;
+  }
+}
+
 .cacao {
   float: right;
   width: 500px;
@@ -184,6 +190,12 @@ ul {
   font-size: 15px;
   margin-left: 200px;
   font-family: "Playfair Display";
+}
+
+@media screen and (max-width: 768px) {
+  .titulo p {
+    margin-left: 100px;
+  }
 }
 
 .foto_carnet {
@@ -421,7 +433,7 @@ ul {
 }
 
 .navbar-expand-lg .navbar-collapse {
-  gap: 680px;
+  gap: 630px;
 }
 
 .container-mb-3 {
@@ -467,6 +479,6 @@ ul {
 }
 
 .padding-decripcion {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
