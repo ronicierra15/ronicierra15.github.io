@@ -19,7 +19,7 @@ var container = document.querySelector(".nav-item");
 container.appendChild(playButton);
 
 function abrirPDF() {
-  window.open(".//IMAGENES/CV-Ronny-Sierra.pdf", "_blank");
+  window.open(".//IMAGENES/Ronny_A.pdf", "_blank");
 }
 
 function toggleMenu() {
